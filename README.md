@@ -3,6 +3,7 @@
 
 ## Requirements
    * Xampp - php 7+
+   * phpMyAdmin
    * Composer
    * Laravel 7.x
    * Stripe account
@@ -19,6 +20,7 @@
 - User account
    - A simple registration form with four input fields.
    - A login form with redirection to registraion form.
+   - Created users table in phpMyAdmin under database e-commerce
 
 - Cart
    - Registered users can add new items to their cart.
@@ -36,6 +38,7 @@
 - Orders history
    - Users can check their orders in their profile.
    - Orders total is displayed at the page.
+   - Created orders table in the e-commerce database 
 
 - Future features
    - e-mail & sms notification.
@@ -43,10 +46,54 @@
    - Order tracking system.
    - Related products recommendation system.
 
+---
+
 ## Exploring the app
 
 ### Home page
 ![alt text](screenshots/home.png)
 
-### Login page
+### Login view
 ![alt text](screenshots/login.png)
+
+### Registration 
+![alt text](screenshots/register.png)
+
+### Initial cart
+![alt text](screenshots/emptyCart.png)
+
+### Cart with items
+![alt text](screenshots/cartItems.png)
+
+### Checkout 
+![alt text](screenshots/checkoutForm.png)
+
+### Purchase notification
+![alt text](screenshots/purchaseSucceed.png)
+
+---
+
+## Database structure
+
+### Users table
+![alt text](screenshots/usersTable.png)
+
+### Products table
+![alt text](screenshots/productsTable.png)
+
+### Orders table
+![alt text](screenshots/ordersTable.png)
+
+---
+## Stripe
+
+### Admins dashboard
+![alt text](screenshots/StripeDashboard.png)
+
+---
+# Bugs
+ - Page refresh when adding items to cart.
+ - Item quantity increment does'nt exists in cart.
+ - Empty order history throw errors.
+ - Default master card token passes to stripe even if the card info is invalid.
+ - Orders history shows wrong summation of total.
