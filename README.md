@@ -42,3 +42,11 @@
    - Order cancel and refund request.
    - Order tracking system.
    - Related products recommendation system.
+
+## Exploring the app
+
+### Home page
+![alt text](screenshots/home.png)
+
+### Login page
+![alt text](screenshots/login.png)
