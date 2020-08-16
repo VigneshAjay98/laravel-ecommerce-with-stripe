@@ -41,7 +41,7 @@
    - Created orders table in the e-commerce database 
 
 - Future features
-   - e-mail & sms notification.
+   - Embedding e-mail & sms notification.
    - Order cancel and refund request.
    - Order tracking system.
    - Related products recommendation system.
