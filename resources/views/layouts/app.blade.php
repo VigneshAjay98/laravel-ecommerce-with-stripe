@@ -11,22 +11,22 @@
     <title>@yield('title')</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('public/mdbootstrap4/js/vendor/jquery-1.12.0.min.js') }}"></script>
-    <script src="{{ asset('public/mdbootstrap4/js/popper.min.js') }}"></script>
-    <script src="{{ asset('public/mdbootstrap4/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('public/mdbootstrap4/js/mdb.min.js') }}"></script>
-    <script src="{{ asset('public/fontawesome-5.13.0/js/all.js') }}"></script>
+    <script src="{{ secure_asset('public/mdbootstrap4/js/vendor/jquery-1.12.0.min.js') }}"></script>
+    <script src="{{ secure_asset('public/mdbootstrap4/js/popper.min.js') }}"></script>
+    <script src="{{ secure_asset('public/mdbootstrap4/js/bootstrap.min.js') }}"></script>
+    <script src="{{ secure_asset('public/mdbootstrap4/js/mdb.min.js') }}"></script>
+    <script src="{{ secure_asset('public/fontawesome-5.13.0/js/all.js') }}"></script>
     @yield('scripts')
     
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="{{ asset('public/fontawesome-5.13.0/css/all.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('public/fontawesome-5.13.0/css/all.css') }}" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('public/mdbootstrap4/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/mdbootstrap4/css/mdb.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/mdbootstrap4/css/style.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('public/mdbootstrap4/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('public/mdbootstrap4/css/mdb.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('public/mdbootstrap4/css/style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -46,7 +46,7 @@
               <!-- Right Side Of Navbar -->
               <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('Cart') }}"><img src="{{ asset('shopping-cart.png') }}"  alt="cart logo"  width="20" height="20"><span class="badge badge-pill badge-primary">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+                          <a class="nav-link" href="{{ route('Cart') }}"><img src="{{ secure_asset('shopping-cart.png') }}"  alt="cart logo"  width="20" height="20"><span class="badge badge-pill badge-primary">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
                           </a>
                       </li>
                       <li class="nav-item dropdown">
